@@ -6,16 +6,11 @@
 /*   By: gguiulfo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/11 21:44:34 by gguiulfo          #+#    #+#             */
-/*   Updated: 2017/03/20 00:11:54 by gguiulfo         ###   ########.fr       */
+/*   Updated: 2017/03/23 17:41:51 by gguiulfo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sys/types.h>
-#include <sys/uio.h>
-#include <unistd.h>
-#include <stdlib.h>
 #include "get_next_line.h"
-#include "libft/libft.h"
 
 static t_list	*ft_getnode(t_list **lst, int fd)
 {
