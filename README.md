@@ -36,9 +36,8 @@ The bonus part of this project consists in two things:
 To use the following function you can run the following commands:
 ```
 git clone --recursive https://github.com/giacomoguiulfo/get_next_line.git
-cd get_next_line && cd libft
-make
-cd ..
+cd get_next_line
+make -C libft/
 ```
 Then you would have to create a program with a main() function that receives files as arguments, include the "get_next_line.h" header file and call the get_next_line function. Here is a short example:
 ```C
