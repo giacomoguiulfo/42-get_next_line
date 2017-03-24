@@ -22,7 +22,7 @@ int get_next_line(const int fd, char **line);
 - The return value can be 1, 0 or -1 depending on whether a line has been read, when the reading has been completed, or if an error has happened respectively.
 - Calling the function get_next_line in a loop will then allow you to read the an entire text file.
 
-For more information, you can checkout the [PDF].
+For more information, you can check out the [PDF].
 
 ### Bonus Part
 
