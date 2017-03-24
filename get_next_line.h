@@ -6,20 +6,22 @@
 /*   By: gguiulfo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/11 21:45:24 by gguiulfo          #+#    #+#             */
-/*   Updated: 2017/03/11 21:48:19 by gguiulfo         ###   ########.fr       */
+/*   Updated: 2017/03/23 13:52:33 by gguiulfo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# define BUFF_SIZE 20
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include "get_next_line.h"
+#include "libft/libft.h"
 
-typedef enum	e_bool
-{
-	false,
-	true
-}				t_bool;
+# define BUFF_SIZE 1
+# define GNL_MAX_FD 4864
 
 int		get_next_line(const int fd, char **line);
 
