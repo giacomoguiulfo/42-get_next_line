@@ -69,12 +69,12 @@ int				get_next_line(const int fd, char **line)
 		temp->content = ft_strjoin(temp->content, buf);
 		free(ctmp);
 		if ((ctmp = ft_strchr(temp->content, '\n')) != NULL)
-			return (ft_newcontent(&temp, line, ctmp - (char *)temp->content));
+			return (ft_setline(&temp, line, ctmp - (char *)temp->content));
 	}
 	if ((ctmp = ft_strchr(temp->content, '\n')) != NULL)
-		return (ft_newcontent(&temp, line, ctmp - (char *)temp->content));
+		return (ft_setline(&temp, line, ctmp - (char *)temp->content));
 	else if (ft_strlen(temp->content) > 0)
-		return (final_line(&temp, line));
+		return (ft_lastline(&temp, line));
 	ft_lstdelnode(&node, temp);
 	return (0);
 }
