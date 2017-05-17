@@ -3,11 +3,6 @@
 
 The aim of this project is to code a function that returns a line, read from a file descriptor. In this case, a "line" is a succession of characters that end with ’\n’ (ascii code 0x0a) or with End Of File (EOF).
 
-## Table of Contents
-- [What is Get_Next_Line?](#what-is-get_next_line)
-- [Bonus Part](#bonus-part)
-- [How do I use this function?](#how-do-i-use-this-function)
-
 ### What is Get_Next_Line?
 
 Get_Next_Line is a function that reads 1 single line from a file descriptor, and saves it to a string passed as as argument.
