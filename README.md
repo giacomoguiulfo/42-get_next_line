@@ -49,6 +49,7 @@ int main(int argc, char **argv)
     printf("%s\n", line);
     free(line);
   }
+  close(fd);
   return (0);
 }
 ```
