@@ -1,12 +1,7 @@
-# get_next_line
+# Get_Next_Line
 ### 42 - Project #3
 
 The aim of this project is to code a function that returns a line, read from a file descriptor. In this case, a "line" is a succession of characters that end with ’\n’ (ascii code 0x0a) or with End Of File (EOF).
-
-## Table of Contents
-- [What is Get_Next_Line?](#what-is-get_next_line)
-- [Bonus Part](#bonus-part)
-- [How do I use this function?](#how-do-i-use-this-function)
 
 ### What is Get_Next_Line?
 
@@ -36,9 +31,8 @@ The bonus part of this project consists in two things:
 To use the following function you can run the following commands:
 ```
 git clone --recursive https://github.com/giacomoguiulfo/get_next_line.git
-cd get_next_line && cd libft
-make
-cd ..
+cd get_next_line
+make -C libft/
 ```
 Then you would have to create a program with a main() function that receives files as arguments, include the "get_next_line.h" header file and call the get_next_line function. Here is a short example:
 ```C
@@ -55,6 +49,7 @@ int main(int argc, char **argv)
     printf("%s\n", line);
     free(line);
   }
+  close(fd);
   return (0);
 }
 ```
