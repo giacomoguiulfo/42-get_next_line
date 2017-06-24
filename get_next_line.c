@@ -6,7 +6,7 @@
 /*   By: gguiulfo <gguiulfo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/11 21:44:34 by gguiulfo          #+#    #+#             */
-/*   Updated: 2017/06/23 05:40:43 by gguiulfo         ###   ########.fr       */
+/*   Updated: 2017/06/24 11:07:01 by gguiulfo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,8 +83,8 @@ int				get_next_line(const int fd, char **line)
 	}
 	if ((ret = gnl_read(fd, line, (((t_gnl*)tmp->content)->file_content))) == 0)
 	{
+		ft_strdel(line);
 		ft_lstdelnode(&head, tmp, gnl_free);
-		*line = NULL;
 	}
 	return (ret);
 }
